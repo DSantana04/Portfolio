@@ -45,7 +45,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("/Portfolio/banner-hero.jpg");
+    background-image: url("./banner-hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
