@@ -1,160 +1,424 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Danilo Santana</title>
-        <link rel="icon" type="image/png" href="laptop.png">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="#info-container-1">About Me</a>
-                <a href="#info-container-2">Skills</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="https://github.com/DSantana04/ticket-generator">Ticket Generator</a>
-                        <a href="https://github.com/DSantana04/age-calculator">Age Calculator</a>
-                        <a href="https://github.com/MatheusMuinos/simula.invest_FullStack">SimulaInvest</a>
-                    </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo Santana - Engenheiro de Computação</title>
+    <meta name="description" content="Portfolio de Danilo Santana Garcia, estudante de Engenharia de Computação e estagiário na Neoenergia.">
+    <link rel="icon" type="image/png" href="laptop.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Carregando...</p>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span>DS</span>
                 </div>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <section class="hero">
-            <label>
-                <h2>
-                    Danilo Santana Garcia
-                </h2>
-            </label>
-        </section>
-        <h1 id="info-container-1">
-            About Me
-        </h1>
-        <div class="info-container-1">
-            <img src="foto-portfolio.jpg" alt="Danilo-Santana">
-            <hr>
-            <p>
-    	        Danilo Santana Garcia (July 24, 2004 — present) is an undergradutate student in Computer Engineering, building
-    	        his own path in career journey. Actually in 7th semester, he is working in a internship to acquire professional
-    	        experience at a workplace. His hobbies are be a bass player, play videogames, watch streaming shows and, mainly,
-    	        study about hardware and general topics about computers. He has passion about hardwares, like graphic cards, 
-    	        processors, MOBOs, and PC building in general. <br> <br>
-    	        In his internship, his job is taking care of a high quantity of systems at Neoenergia, set at Coelba's headquarters,
-    	        in the Technical Systems Unity (Unidade de Sistemas Técnicos in brazilian portuguese). Even being an intern, his goal
-    	        is being a permanent employee as a Junior System Analyst as soon as he finish his course at Senai CIMATEC university.
-	        </p>
-        </div>
-        <div class="info-container-2">
-	        <h2>
-	        	Professional Experience
-	        </h2>
-	        <hr>
-	        <p>
-	        	Danilo Santana was a team leader on Trilha Técnico-Gestor in his course, building an website to the company Resgate Prático.
-	        	He had many challenges being a leader, but he and his team had success to reach their objectives and deliver the final
-	        	product as the company asked and brought them much more than their expectations. His period being a team leader lasted
-	        	entirely 2024 (1 year), so he had a long time to learn and acquire experience of be a leader. <br> <br>
-                At the end of 2024, he applied to a internship at Neoenergia, and was accepted to work at Coelba's headquarters, in the
-                Technical Systems Unity (Unidade de Sistemas Técnicos). His job is to take care of a high quantity of systems, and he is learning a lot about the company
-                and how it works, so he can be, as soon as possible, a Junior System Analyst at the company. Here are some of his experiences:
-                <ul>
-                    <li>Intern at Neoenergia, working with the Technical Systems Unity. 2024 - at the moment</li>
-                    <li>Member at Baja from Senai CIMATEC. 2024 - at the moment</li>
-                    <li>Team Leader at Trilha Técnico-Gestor, building an website to the company Resgate Prático. 2024 - 2024;</li>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">Sobre Mim</a></li>
+                    <li><a href="#experience" class="nav-link">Experiência</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
-    	    </p>
-            <div class="projects-section">
-                <h2>Featured Projects</h2>
-                <hr>
-                <div class="projects-container">
-                    <div class="project-card" style="background-image: url('./TicketGenerator.png');">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Ticket Generator</h3>
-                            <p class="project-description">A simple website about a ticket generator to a coding conference. Check it out!</p>
-                            <a href="https://ticket-generator-ashy-tau.vercel.app/" class="project-link" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card" style="background-image: url('./AgeCalculator.png');">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Age Calculator</h3>
-                            <p class="project-description">A React site about a calculator to calculate a wanted period. Check it out!</p>
-                            <a href="https://age-calculator-red-eta.vercel.app/" class="project-link" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card" style="background-image: url('./warning-icon.svg'); background-size: 180px; background-repeat: no-repeat; background-position: center;">
-                        <div class="project-overlay">
-                            <h3 class="project-title">SimulaInvest</h3>
-                            <p class="project-description">A website about investment and financial operations. Under construct...</p>
-                            <a href="https://simula-invest-full-stack.vercel.app/" class="project-link" target="_blank">View Project</a>
-                        </div>
-                    </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-            <h2 id="info-container-2">
-                Skills
-            </h2>
-            <hr>
-            <div class="flip-card-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Technical Skills</h3>
-                            <p>Hover to see details</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Technical Skills</h3>
-                            <ul>
-                                <li>Programming Languages</li>
-                                <li>SQL and PL/SQL</li>
-                                <li>Office Package</li>
-                                <li>Power Automate and BI</li>
-                                <li>Advanced-fluent English (by TOEFL)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>Soft Skills</h3>
-                            <p>Hover to see details</p> 
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Soft Skills</h3>
-                            <ul>
-                                <li>Leadership</li>
-                                <li>Teamwork</li>
-                                <li>Problem Solving</li>
-                                <li>Communication</li>
-                                <li>Adaptability</li>
-                            </ul> 
-                        </div> 
-                    </div> 
-                </div> 
-            </div>
-            <h2>
-                Education
-            </h2>
-            <hr>
-            <ul>
-                <li>Computer Engineering at Senai CIMATEC. 2022 - at the moment</li>
-                <li>High School at Centro Educacional Vitória-Régia. 2019 - 2021</li>
-                <li>English Course at CCAA. 2013 - 2021</li>
-            </ul>
-            <h2 id="contact">
-                Contact
-            </h2>
-            <hr>
-            <ul>
-                <li>Email: danilo.santana0324@gmail.com</li>
-                <li>LinkedIn: Danilo Santana</li>
-                <li>Github: DSantana04</li>
-            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
         </div>
-    </body>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Olá, eu sou</span>
+                    <span class="hero-name">Danilo Santana Garcia</span>
+                </h1>
+                <p class="hero-subtitle">Engenheiro de Computação | Desenvolvedor | Entusiasta de Hardware</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Conheça meu trabalho</a>
+                    <a href="#contact" class="btn btn-secondary">Entre em contato</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="foto-portfolio.jpg" alt="Danilo Santana Garcia" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        Danilo Santana Garcia (24 de julho de 2004) é um estudante de graduação em Engenharia de Computação, 
+                        construindo seu próprio caminho na jornada profissional. Atualmente no 7º semestre, está trabalhando 
+                        em um estágio para adquirir experiência profissional no ambiente de trabalho.
+                    </p>
+                    <p>
+                        Seus hobbies incluem tocar baixo, jogar videogames, assistir séries e, principalmente, estudar sobre 
+                        hardware e tópicos gerais sobre computadores. Ele tem paixão por hardwares, como placas gráficas, 
+                        processadores, placas-mãe e montagem de PCs em geral.
+                    </p>
+                    <p>
+                        Em seu estágio, seu trabalho é cuidar de uma grande quantidade de sistemas na Neoenergia, localizada 
+                        na sede da Coelba, na Unidade de Sistemas Técnicos. Mesmo sendo estagiário, seu objetivo é se tornar 
+                        um funcionário permanente como Analista de Sistemas Júnior assim que terminar seu curso na universidade Senai CIMATEC.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2024</span>
+                            <span class="stat-label">Início do Estágio</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7º</span>
+                            <span class="stat-label">Semestre Atual</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Projetos Concluídos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experiência Profissional</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-content">
+                <div class="experience-intro">
+                    <p>
+                        Danilo Santana foi líder de equipe na Trilha Técnico-Gestor em seu curso, construindo um website 
+                        para a empresa Resgate Prático. Ele enfrentou muitos desafios sendo líder, mas ele e sua equipe 
+                        tiveram sucesso em alcançar seus objetivos e entregar o produto final conforme a empresa solicitou, 
+                        trazendo muito mais do que suas expectativas.
+                    </p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Estagiário - Neoenergia</h3>
+                            <span class="timeline-period">2024 - Presente</span>
+                            <p>Trabalhando na Unidade de Sistemas Técnicos, cuidando de uma grande quantidade de sistemas na sede da Coelba.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Membro - Baja Senai CIMATEC</h3>
+                            <span class="timeline-period">2024 - Presente</span>
+                            <p>Participação ativa na equipe Baja, desenvolvendo habilidades técnicas e de trabalho em equipe.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Líder de Equipe - Trilha Técnico-Gestor</h3>
+                            <span class="timeline-period">2024</span>
+                            <p>Liderou equipe na construção de website para a empresa Resgate Prático, superando expectativas do cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="TicketGenerator.png" alt="Ticket Generator" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ticket-generator-ashy-tau.vercel.app/" target="_blank" class="project-link">
+                                    <span>Ver Projeto</span>
+                                </a>
+                                <a href="https://github.com/DSantana04/ticket-generator" target="_blank" class="project-link">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ticket Generator</h3>
+                        <p class="project-description">
+                            Um website simples sobre um gerador de tickets para uma conferência de programação. 
+                            Desenvolvido com foco na experiência do usuário.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="AgeCalculator.png" alt="Age Calculator" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://age-calculator-red-eta.vercel.app/" target="_blank" class="project-link">
+                                    <span>Ver Projeto</span>
+                                </a>
+                                <a href="https://github.com/DSantana04/age-calculator" target="_blank" class="project-link">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Age Calculator</h3>
+                        <p class="project-description">
+                            Um site React sobre uma calculadora para calcular um período desejado. 
+                            Interface intuitiva e responsiva.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://simula-invest-full-stack.vercel.app/" target="_blank" class="project-link">
+                                    <span>Ver Projeto</span>
+                                </a>
+                                <a href="https://github.com/MatheusMuinos/simula.invest_FullStack" target="_blank" class="project-link">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SimulaInvest</h3>
+                        <p class="project-description">
+                            Um website sobre investimentos e operações financeiras. 
+                            Projeto em desenvolvimento com foco em educação financeira.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Em Desenvolvimento</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">Habilidades Técnicas</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">💻</div>
+                            <h4>Linguagens de Programação</h4>
+                            <p>Python, JavaScript, Java, C++</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗄️</div>
+                            <h4>Banco de Dados</h4>
+                            <p>SQL, PL/SQL, MySQL, PostgreSQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📊</div>
+                            <h4>Ferramentas Office</h4>
+                            <p>Excel, Word, PowerPoint, Power BI</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚡</div>
+                            <h4>Automação</h4>
+                            <p>Power Automate, Scripts, APIs</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🌐</div>
+                            <h4>Inglês Avançado</h4>
+                            <p>Certificado TOEFL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">👥</div>
+                            <h4>Liderança</h4>
+                            <p>Experiência como líder de equipe</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🤝</div>
+                            <h4>Trabalho em Equipe</h4>
+                            <p>Colaboração efetiva em projetos</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🧩</div>
+                            <h4>Resolução de Problemas</h4>
+                            <p>Análise crítica e soluções criativas</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💬</div>
+                            <h4>Comunicação</h4>
+                            <p>Comunicação clara e eficaz</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔄</div>
+                            <h4>Adaptabilidade</h4>
+                            <p>Flexibilidade em ambientes dinâmicos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Educação</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon">🎓</div>
+                    <h3>Engenharia de Computação</h3>
+                    <p class="education-institution">Senai CIMATEC</p>
+                    <span class="education-period">2022 - Presente</span>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">📚</div>
+                    <h3>Ensino Médio</h3>
+                    <p class="education-institution">Centro Educacional Vitória-Régia</p>
+                    <span class="education-period">2019 - 2021</span>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">🌐</div>
+                    <h3>Curso de Inglês</h3>
+                    <p class="education-institution">CCAA</p>
+                    <span class="education-period">2013 - 2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        Estou sempre aberto a novas oportunidades e colaborações. 
+                        Vamos conversar sobre como posso contribuir para seu projeto!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:danilo.santana0324@gmail.com" class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>danilo.santana0324@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/danilo-santana-garcia/" target="_blank" class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>Danilo Santana</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/DSantana04" target="_blank" class="contact-item">
+                            <div class="contact-icon">💻</div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>DSantana04</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Danilo Santana Garcia. Todos os direitos reservados.</p>
+                <p>Desenvolvido com ❤️ e muito café ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
 </html>
+
