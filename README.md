@@ -37,7 +37,8 @@ Portfólio profissional desenvolvido para apresentar minha trajetória acadêmic
 - 💼 LinkedIn: [Danilo Santana Garcia](https://www.linkedin.com/in/danilo-santana-garcia/)  
 - 💻 GitHub: [DSantana04](https://github.com/DSantana04)  
 
+- Link do vídeo para apresentação da atividade: [Link do vídeo do YouTube](https://youtu.be/lBNwZjX6x88)
 ---
 
 Desenvolvido com ❤️ por Danilo Santana Garcia  
-© 2024 - Todos os direitos reservados
+© 2025 - Todos os direitos reservados
